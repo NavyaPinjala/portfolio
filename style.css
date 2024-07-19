@@ -2,7 +2,6 @@ html,
 body {
     background-color: #AAC9FF;
     color: white;
-    /* Optional: set text color to white for better contrast */
     margin: 0;
     padding: 0;
     height: 100%;
@@ -88,7 +87,6 @@ span {
     display: block;
     position: relative;
     top: -100px;
-    /* Adjust this value based on the height of your header */
     visibility: hidden;
 }
 
