@@ -527,8 +527,8 @@ span {
 }
 
 @media (max-width: 768px) {
-    .about {
-        height: fit-content;
+    .home-content {
+        width: fit-content;
     }
 }
 @keyframes slideTop {
