@@ -21,6 +21,9 @@
                 <a href="#skillset-anchor"> Skillset</a>
                 <a href="#contact-anchor">Contact</a>
             </nav>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class='bx bx-menu'></i>
+            </div>
         </div>
     </header>
     <section id="home" class="home">
@@ -184,6 +187,7 @@
                     <li> RESTful API</li>
                     <li> SOAP</li>
                     <li> React JS</li>
+                    <li> RabbitMQ</li>
                 </ul>
                 <ul class="skills-column">
                     <li> Angular</li>
@@ -193,6 +197,7 @@
                     <li> Docker</li>
                     <li> Kubernetes</li>
                     <li> MongoDB</li>
+                    <li> JUnit</li>
                 </ul>
                 <ul class="skills-column">
                     <li> SQL</li>
@@ -202,6 +207,7 @@
                     <li> HTML 5</li>
                     <li> CSS 3</li>
                     <li> JMS</li>
+                    <li> Mockito</li>
                 </ul>
             </div>
         </div>
@@ -219,6 +225,12 @@
     <footer class="footer">
         <p class="copyright"> &#169 2024 | All rights reserved </p>
     </footer>
+   <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
