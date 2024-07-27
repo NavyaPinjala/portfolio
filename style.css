@@ -6,7 +6,6 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    box-sizing: border-box;
 }
 
 body {
@@ -29,11 +28,11 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 20px;
+    padding: 35px 12%;
     background: whitesmoke;
     backdrop-filter: blur(10px);
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items: center;
     z-index: 100;
 }
