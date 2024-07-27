@@ -2,6 +2,7 @@ html,
 body {
     background-color: #AAC9FF;
     color: white;
+    /* Optional: set text color to white for better contrast */
     margin: 0;
     padding: 0;
     height: 100%;
@@ -22,6 +23,83 @@ body {
     text-decoration: none;
     list-style: none;
 
+}
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
 }
 .header {
     position: fixed;
@@ -87,84 +165,8 @@ span {
     display: block;
     position: relative;
     top: -100px;
+    /* Adjust this value based on the height of your header */
     visibility: hidden;
-}
-#hamburger-nav {
-  display: none;
-}
-
-.hamburger-menu {
-  position: relative;
-  display: inline-block;
-}
-
-.hamburger-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 24px;
-  width: 30px;
-  cursor: pointer;
-}
-
-.hamburger-icon span {
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  transition: all 0.3 ease-in-out;
-}
-
-.menu-links {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: white;
-  width: fit-content;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3 ease-in-out;
-}
-
-.menu-links a {
-  display: block;
-  padding: 10px;
-  text-align: center;
-  font-size: 1.5rem;
-  color: black;
-  text-decoration: none;
-  transition: all 0.3 ease-in-out;
-}
-
-.menu-links li {
-  list-style: none;
-}
-
-.menu-links.open {
-  max-height: 300px;
-}
-
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
-}
-
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-.hamburger-icon span:first-child {
-  opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
 }
 
 .home {
@@ -335,22 +337,6 @@ span {
 }
 
 
-@media (max-width: 1024px) {
-    .experience-box {
-        flex: 1 1 calc(50% - 40px);
-        /* Two boxes per row */
-        max-width: calc(50% - 40px);
-    }
-}
-
-@media (max-width: 768px) {
-    .experience-box {
-        flex: 1 1 100%;
-        /* One box per row */
-        max-width: 100%;
-    }
-}
-
 .skillset-content h2{
     text-align: center;
         margin-top: 60px;
@@ -451,6 +437,53 @@ span {
     text-align: center;
     color: black;
     font-size: 12px;
+}
+
+/* Media */
+
+@media screen and (max-width: 1400px) {
+
+    #contact {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    #hamburger-nav {
+        display: flex;
+    }
+
+    #experience,
+    .experience-section {
+        margin-top: 2rem;
+    }
+
+    section,
+    .section-container {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 5%;
+    }
+
+    .skillset-content {
+        margin-top: 0;
+    }
+}
+@media (max-width: 1024px) {
+    .experience-box {
+        flex: 1 1 calc(50% - 40px);
+        max-width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
 @keyframes slideRight{
     0%{
