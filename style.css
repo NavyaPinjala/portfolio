@@ -44,6 +44,26 @@ body {
     /*margin: 0 auto;*/
     margin-bottom: -10px;
 }
+.header .menu-icon {
+    display: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .header .navbar {
+        display: none;
+        flex-direction: column;
+    }
+
+    .header .navbar.active {
+        display: flex;
+    }
+
+    .header .menu-icon {
+        display: block;
+    }
+
 .logo {
     position: relative;
     font-size: 25px;
@@ -221,6 +241,7 @@ span {
     margin: 10px, 0;
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 100%;
 }
 .timeline {
     position: absolute;
@@ -255,6 +276,20 @@ span {
 .experience-box p {
     font-size: 15px;
     color: black;
+}
+@media (max-width: 768px) {
+    .experience-grid {
+        flex-direction: column;
+    }
+
+    .experience-box {
+        flex: 1 1 100%;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
@@ -292,6 +327,8 @@ span {
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 0.7s;
+    flex-direction: column;
+    align-items: center;
 } 
 
 .skills-column {
