@@ -525,6 +525,12 @@ span {
         min-width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    .about {
+        height: fit-content;
+    }
+}
 @keyframes slideTop {
     0% {
         transform: translateY(100px);
