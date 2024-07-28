@@ -526,12 +526,6 @@ span {
     }
 }
 
-@media (max-width: 768px) {
-    .home-content {
-        width: fit-content;
-    }
-}
-
 
 @keyframes slideTop {
     0% {
