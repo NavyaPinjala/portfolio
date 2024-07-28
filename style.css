@@ -269,10 +269,12 @@ span {
     color: white;
     font-size: 52px;
     padding: 10px;
+    flex-direction: column;
 }
 .about-content h3{
     font-size: 32px;
     color: white;
+    flex-direction: column;
 }
 .about-content p{
     color: black;
@@ -285,12 +287,12 @@ span {
 .experience-section {
     padding: 40px;
     width: 100%;
-    flex-direction: column;
 }
 .experience-container {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    flex-direction: column;
 }
 .heading {
     font-size: 52px;
