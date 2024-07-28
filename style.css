@@ -295,6 +295,7 @@ span {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -329,12 +330,13 @@ span {
 
 /* Timeline */
 .timeline {
-    position: absolute;
-    left: -220px;
+    /*left: -220px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%);*/
     font-size: 1.2 rem;
     color: #00bfa5;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 /* Experience Description */
@@ -517,6 +519,17 @@ span {
     }
 }
 @media (max-width: 768px) {
+    .experience-box {
+        padding: 10px;
+    }
+    .heading {
+        font-size: 32px;
+    }
+    .timeline {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 768px) {
     .skills-container {
         flex-direction: column;
         gap: 20px;
@@ -527,7 +540,7 @@ span {
     }
 }
 
-
+/* Key Frames */
 @keyframes slideTop {
     0% {
         transform: translateY(100px);
