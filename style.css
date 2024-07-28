@@ -477,7 +477,7 @@ span {
     font-size: 18px;
 }
 
-/* Media */
+/* Media Queries*/
 @media screen and (max-width: 1400px) {
 
     #contact {
@@ -513,6 +513,20 @@ span {
     }
 }
 
+@media (max-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+}
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 42px; 
+    }
+    .home-content h3 {
+        font-size: 32px;
+    }
+}
 @media (max-width: 768px) {
     .experience-box {
         flex: 1 1 100%;
