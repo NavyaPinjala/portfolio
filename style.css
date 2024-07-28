@@ -381,8 +381,8 @@ span {
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 0.7s;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /*flex-direction: row;
+    flex-wrap: wrap;*/
 } 
 
 .skills-column {
