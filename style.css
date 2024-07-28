@@ -201,6 +201,7 @@ span {
     max-width: 800px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
 }
 .home-content h1 {
@@ -270,11 +271,13 @@ span {
     font-size: 52px;
     padding: 10px;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .about-content h3{
     font-size: 32px;
     color: white;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .about-content p{
     color: black;
@@ -293,6 +296,7 @@ span {
     margin: 0 auto;
     text-align: center;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .heading {
     font-size: 52px;
@@ -305,6 +309,7 @@ span {
 .experience-grid {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
@@ -370,11 +375,11 @@ span {
 .skills-container {
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 100px;
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 0.7s;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 } 
 
@@ -502,12 +507,6 @@ span {
 
     .skillset-content {
         margin-top: 0;
-    }
-}
-@media (max-width: 1024px) {
-    .experience-box {
-        flex: 1 1 calc(50% - 40px);
-        max-width: calc(50% - 40px);
     }
 }
 
