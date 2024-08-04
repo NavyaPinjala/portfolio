@@ -25,7 +25,7 @@ body {
     list-style: none;
 }
 
-/* Desktop Navigation */
+/* DESKTOP NAVIGATION */
 nav,
 .navbar {
     display: flex;  
@@ -70,7 +70,7 @@ a {
     border-bottom: 3px solid rgba(59, 130, 246, .5);
 }
 
-/* Logo */
+/* LOGO */
 .logo {
     position: relative;
     font-size: 25px;
@@ -92,10 +92,15 @@ span {
     color: rgba(59, 130, 246, .5);
 }
 
-/* Hamburger */
+/* HAMBURGER */
 
 #hamburger-nav {
     display: none;
+    position: fixed;
+    top: 10px; 
+    right: 10px; 
+    z-index: 1000;
+    background-color: transparent;
 }
 
 .hamburger-menu {
