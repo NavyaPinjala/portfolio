@@ -503,7 +503,9 @@ span {
     #hamburger-nav {
         display: flex;
     }
-
+  #hamburger-nav .logo {
+        display: none;
+    }
     #experience,
     .experience-section {
         margin-top: 2rem;
